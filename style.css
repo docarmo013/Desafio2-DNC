@@ -1,0 +1,353 @@
+html{
+    font-family: Montserrat;
+    width: 100%;
+    height: 100%;
+}
+body{
+    margin: 0;
+}
+#navbar{ 
+    padding: 16px 156px;
+    gap: 10px; 
+    background-color: #02A28F;
+    margin-bottom: 50px;  
+}
+#navbar > h1{
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 24px;
+}
+#imagem-com-gradiente{
+    width: 744px;
+    padding: 24px;
+    height:396px;
+    gap: 10px;
+    border-radius: 10px;
+    margin: 0px 25px 24px 156px;
+    background: linear-gradient(180deg, rgba(102, 102, 102, 0) 0%,
+    #000000 100%), url(./imagens/banner.jpg);
+    background-size: cover;
+}
+#p-banner{
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 1px;
+}
+#h1-banner{
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 1px;
+}
+#h2-banner{
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin: 1px;   
+}
+.txt-banner{
+    margin-top: 295px;
+}
+#posts{
+    width: 361px;
+    height: 396px;
+    border-radius: 10px;
+}
+.h2-titulo{
+    display: flex;
+    padding: 16px 24px ;
+    border-radius: 10px ;
+    background-color: #02A28F;  
+    color: #FFFFFF;
+    box-shadow: 0px 10px 10px 0px #0000001A;
+}
+.h2-titulo > h2{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700; 
+}
+.p-h2{
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: underline;
+    margin: 0;
+}
+.conteudo-post{
+    background-color: #FFFFFF;
+    width: 360px;
+    height: 96px;
+    border-radius: 10;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 10px 10px 0px #0000001A;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.conteudo-post > img{
+    margin: 13px 0px 13px 12px;
+    width: 132px;
+    height: 70px;
+    border-radius: 10px;   
+}
+.txt-post{
+    margin-left: 12px;
+}
+.txt-post > h3{
+    margin-top: 13px 32px 8px 0px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+}
+.txt-post > p{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+    color: #616161;   
+}
+#posts-recentes{
+    width:794px;
+    height:100%;
+    gap: 10px; 
+    margin-left: 156px;     
+}
+#vermenos{
+    display: none;
+}
+#grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 24px;
+       
+}
+.cardsup > img{
+    width: 100%;
+    height: 191px;
+    border-radius: 16px 16px 0px 0px;
+}
+#escondido > img{
+    width: 100%;
+    height: 191px;
+    border-radius: 16px 16px 0px 0px;
+}
+#ultimo > img{
+    width: 100%;
+    height: 191px;
+    border-radius: 16px 16px 0px 0px;
+}
+.titulo-postsrecentes{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-radius: 10px ;
+    background-color: #02A28F;  
+    color: #FFFFFF;
+    box-shadow: 0px 10px 10px 0px #0000001A;
+    align-items: center;   
+}
+.titulo-postsrecentes > h2{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.titulo-postsrecentes > button{
+    transition: transform 0.5s .2s;
+    font-family: Montserrat;
+    text-align: left;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+}
+.titulo-postsrecentes > button:hover{
+    transform: scale(1.1);
+}
+.cardsup{
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 396px; 
+    border-radius:16px 16px;
+    box-shadow:0px 10px 20px 0px #0000001A;
+    margin-top: 11px;   
+}
+#escondido{
+    display: none;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 396px; 
+    border-radius:16px 16px;
+    box-shadow:0px 10px 20px 0px #0000001A;
+    margin-top: 11px;   
+}
+#ultimo{
+    display: none;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 396px; 
+    border-radius:16px 16px;
+    box-shadow:0px 10px 20px 0px #0000001A;
+    margin-top: 11px;   
+}
+.p1-card{
+    margin: 15px 0px 8px 16px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #02A28F;
+}
+.h2-card{
+    margin: 0px 0px 8px 16px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+.p2-card{
+    margin: 0px 0px 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #616161;
+}
+.p2-card > b{
+    font-size: 14px;
+    font-weight: 700;
+    color: #616161;
+}
+.p3-card{
+    margin: 0px 0px 8px 16px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.p4-card{
+    margin: 0px 0px 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #616161;
+}
+#categorias{
+    width: 361px;
+    height: 184px;
+    margin-left: 0;
+}
+#conteudo-categoria {
+    font-size: 16px;
+    font-weight: 600;
+    color: #616161;
+}
+#conteudo-categoria > li {
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+    height: 20px;
+    margin-top: 14px;
+}
+footer{
+    margin-top: 65px;
+    gap: 10px; 
+    background-color: #02A28F;
+    margin-bottom: 50px;
+    text-align: center;
+}
+footer > p {
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    #navbar{
+        width:384px;
+        height:70px;
+        padding: 16px 0px 16px 0px;
+        align-items: center; 
+        margin-bottom: 24px;     
+    }
+    #navbar > h1{
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center; 
+        padding: 20px;        
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    #imagem-com-gradiente{
+    width:368px;
+    height:396px;
+    padding: 0;
+    gap: 10px;
+    border-radius: 10px ;
+    margin: 0px 8px 24px;
+    }
+    .txt-banner{
+        margin: 262px 24px 24px;
+    }
+    .h2-titulo{
+        margin: 0px 9px;
+    }
+    #posts{
+        margin: 0px 8px 24px;
+    }
+    #posts-recentes{
+        width:368px;
+        height:auto; 
+        margin: 24px 8px 0px ; 
+    }
+    #grid-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .cardsup{
+    width: 368px;
+    height: 396px;
+    }
+    #escondido{
+    width: 368px;
+    height: 396px;
+    }
+    #ultimo{
+    width: 368px;
+    height: 396px;
+    }
+    #categorias{
+        margin: 24px 8px; 
+    }
+    footer{
+    width:384px;
+    height:48px;
+    
+    }
+}
+
+    
+
+
+
+
+
+
+
+
+
+
