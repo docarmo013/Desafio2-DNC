@@ -69,6 +69,19 @@ body{
     color: #FFFFFF;
     box-shadow: 0px 10px 10px 0px #0000001A;
 }
+#h2-categorias{
+    display: flex;
+    padding: 16px 24px ;
+    border-radius: 10px ;
+    background-color: #02A28F;  
+    color: #FFFFFF;
+    box-shadow: 0px 10px 10px 0px #0000001A;
+}
+#h2-categorias > h2{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
 .h2-titulo > h2{
     margin: 0;
     font-size: 20px;
@@ -119,7 +132,8 @@ body{
     width:794px;
     height:100%;
     gap: 10px; 
-    margin-left: 156px;     
+    margin-left: 156px;
+    margin: 0px 25px 0px 156px;     
 }
 #vermenos{
     display: none;
@@ -288,8 +302,8 @@ footer > p {
         padding: 20px;        
     }
     .container{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: auto;
         gap: 0px;
     }
     #imagem-com-gradiente{
@@ -312,7 +326,7 @@ footer > p {
     #posts-recentes{
         width:368px;
         height:auto; 
-        margin: 24px 8px 0px ; 
+        margin: 0px 8px 24px ; 
     }
     #grid-container{
         display: flex;
@@ -333,12 +347,19 @@ footer > p {
     #categorias{
         margin: 24px 8px; 
     }
+    #conteudo-categoria{
+        margin: 0px 8px;
+    }
     footer{
     width:384px;
     height:48px;
-    
+    }
+    #posts{
+        grid-area: 3;
     }
 }
+    
+
 
     
 
