@@ -20,6 +20,7 @@ body{
     margin: 0;
 }
 .container{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     gap: 24px;
@@ -56,7 +57,7 @@ body{
 .txt-banner{
     margin-top: 295px;
 }
-#posts{
+.posts{
     width: 361px;
     height: 396px;
     border-radius: 10px;
@@ -254,7 +255,7 @@ body{
     font-weight: 500;
     color: #616161;
 }
-#categorias{
+.categorias{
     width: 361px;
     height: 184px;
     margin-left: 0;
@@ -286,6 +287,50 @@ footer > p {
     
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    #navbar{
+        width:100%;
+        height:40px;
+        padding: 20px 70px;      
+    }
+    #navbar > h1{
+        font-size: 34px;
+        font-weight: 700;
+        text-align: left;         
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    #imagem-com-gradiente{
+        width:90%;
+        height:396px;
+        padding: 0px;
+        gap: 10px;
+        border-radius: 10px ;
+        margin: 0px  0px 24px 70px ;
+        }
+    .txt-banner{
+        margin: 262px 24px ;
+    }
+    .posts{
+        height: 100%;
+        margin: 0px 70px 24px;
+        margin: 0px 70px 24px;
+    }
+    #posts-recentes{
+        width:90%;
+        height:auto; 
+        margin: 0px 70px 24px ; 
+    }
+    .categorias{
+        height: 100%;
+        margin: 0px 70px; 
+    }
+    
+    
+}
 
 @media only screen and (max-width: 768px) {
     #navbar{
@@ -320,7 +365,7 @@ footer > p {
     .h2-titulo{
         margin: 0px 9px;
     }
-    #posts{
+    .posts{
         margin: 0px 8px 24px;
     }
     #posts-recentes{
@@ -344,7 +389,7 @@ footer > p {
     width: 368px;
     height: 396px;
     }
-    #categorias{
+    .categorias{
         margin: 24px 8px; 
     }
     #conteudo-categoria{
@@ -354,10 +399,11 @@ footer > p {
     width:384px;
     height:48px;
     }
-    #posts{
+    .posts{
         grid-area: 3;
     }
 }
+
     
 
 
